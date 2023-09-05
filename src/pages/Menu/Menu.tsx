@@ -14,6 +14,7 @@ export function Menu() {
 	const getMenu = async () => {
 		try {
 			setIsLoading(true);
+			setError(undefined);
 			await new Promise<void>((resolve) => {
 				setTimeout(() => {
 					resolve();
