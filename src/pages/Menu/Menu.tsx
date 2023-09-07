@@ -15,6 +15,7 @@ export function Menu() {
 		try {
 			setIsLoading(true);
 			setError(undefined);
+			setProducts([]);
 			await new Promise<void>((resolve) => {
 				setTimeout(() => {
 					resolve();
